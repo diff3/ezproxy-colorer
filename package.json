@@ -1,17 +1,17 @@
 {
   "name": "ezProxy",
   "version": "0.1.0",
-  "description": "ezProxy text highlighter",
+  "description": "ezProxy config file colorer for Atom editor ",
   "engines": {
     "atom": "*"
   },
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/diff3/ezproxy"
+    "url": "https://github.com/diff3/ezproxy-colorer"
   },
   "bugs": {
-    "url": "https://github.com/diff3/ezproxy/issues"
+    "url": "https://github.com/diff3/ezproxy-colorer"
   },
   "license": "MIT"
 }
