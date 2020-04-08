@@ -1,4 +1,4 @@
-# ezProxy config file colorer for Atom editor.
+# ezProxy config file colorer for Atom editor
 
 Place package in ./atom/packages (mac, linux)
 
