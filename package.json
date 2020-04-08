@@ -1,0 +1,17 @@
+{
+  "name": "ezProxy",
+  "version": "0.1.0",
+  "description": "ezProxy text highlighter",
+  "engines": {
+    "atom": "*"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/diff3/ezproxy"
+  },
+  "bugs": {
+    "url": "https://github.com/diff3/ezproxy/issues"
+  },
+  "license": "MIT"
+}

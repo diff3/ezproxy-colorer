@@ -1,0 +1,111 @@
+'scopeName': 'source.ezproxy'
+'name': 'ezProxy'
+'fileTypes': ['cfg']
+
+'patterns': [
+  # Match Title or T, color to end of line
+  {
+    'match': '^([ ]+)'
+    'name': 'invalid.illegal'
+  },
+  {
+    'match': '^([Title ])[^�]+'
+    'name': 'string.quoted.single.ezproxy'
+  },
+  {
+    'match': '^([T ])[^�]+'
+    'name': 'string.quoted.single.ezproxy'
+  },
+  # Match for comments, color to end of line
+  {
+      'match': '^([#]+)[^�]+'
+      'name': 'keyword.control.ezproxy'
+  },
+  # Mark all blank space at the beggining of line
+
+  # Match URL or U, color the word
+  {
+    'match': '^(URL |U )(.*)'
+    'captures':
+        '1':
+            'name': 'meta.class.ezproxy'
+        '2':
+            'name': 'markup.underline.exproxy'
+    'name': 'entity.name.function.exproxy'
+  },
+  {
+    'match': '^(HostJavaScript |HJ )(.*)'
+    'captures':
+        '1':
+            'name': 'meta.class.ezproxy'
+        '2':
+            'name': 'entity.name.function.exproxy'
+    'name': 'string.quoted.single.ezproxy'
+  },
+  {
+    'match': '^(DomainJavaScript |DJ )(.*)'
+    'captures':
+        '1':
+            'name': 'meta.class.ezproxy'
+        '2':
+            'name': 'entity.name.function.exproxy'
+    'name': 'string.quoted.single.ezproxy'
+  },
+  # Match for Host or H, color the word
+  {
+    'match': '^(Host |H |host |Domain |D |domain )(.*)'
+    'captures':
+        '1':
+            'name': 'meta.class.ezproxy'
+        '2':
+            'name': 'entity.name.function.exproxy'
+    'name': 'entity.name.function.exproxy'
+  },
+  {
+    'match': '^(Find |Replace )(.*)'
+    'captures':
+        '1':
+            'name': 'keyword.control.ezproxy'
+        '2':
+            'name': 'entity.name.function.exproxy'
+        'name': 'meta.function.exproxy'
+  },
+  # Search for invalid characters and color background red
+  {
+    'match': '([�]+)'
+    'name': 'invalid.illegal'
+  },
+  {
+      'match': '^(ExcludeIP |IncludeIP |RejectIP |AutoLoginIP )(.*)'
+      'captures':
+          '1':
+              'name': 'meta.class.ezproxy'
+          '2':
+              'name': 'entity.name.function.exproxy'
+      'name': 'meta.function.exproxy'
+  },
+  {
+      'match': '^(Name |LoginPort |SSLOpenSSLConfCmd |SSLCipherSuite |SSLHonorCipherOrder |LoginPortSSL |MaxLifetime |MaxSessions |MaxVirtualHosts |ShibbolethDisable |ShibbolethMetadata |Audit |AuditPurge |Location | IntruderIPAttempts |IntruderUserAttempts |UsageLimit |LogFormat |LogFile |SkipPort |IntruderIPAttempts |TokenKey |TokenSignatureKey )(.*)'
+      'captures':
+          '1':
+              'name': 'meta.class.ezproxy'
+          '2':
+              'name': 'entity.name.function.exproxy'
+      'name': 'meta.function.exproxy'
+  },
+  {
+      'match': '^(NeverProxy |HTTPMethod |HTTPHeader |Option |MimeFilter |OPTION |Option |AnonymousURL |COOKIE |Cookie |ProxyHostnameEdit |AddUserHeader )(.*)'
+      'captures':
+          '1':
+              'name': 'keyword.control.ezproxy'
+          '2':
+              'name': 'entity.name.function.exproxy'
+      'name': 'meta.function.exproxy'
+  }
+]
+
+# Host j h t
+
+# URL, ip = blue
+# command = yellow
+# domain = orange
