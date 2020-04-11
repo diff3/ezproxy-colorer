@@ -5,6 +5,10 @@
   "engines": {
     "atom": "*"
   },
+  "keywords": [
+    "cfg",
+    "Syntax"
+  ],
   "dependencies": {},
   "repository": {
     "type": "git",

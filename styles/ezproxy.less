@@ -1,26 +1,32 @@
-@syntax-mix-base:       hsl(220, 100%, 66%);
-@syntax-mix-grey:       12%;
-@syntax-mix-color:      0%;
+@import "ui-variables";
 
-@light-gray:      mix( @syntax-mix-base, hsl(0,0%,72%), @syntax-mix-grey);
-@gray:            mix( @syntax-mix-base, hsl(0,0%,54%), @syntax-mix-grey);
-@dark-red:        mix( @syntax-mix-base, #BE4F44, @syntax-mix-color);
-@orange:          mix( @syntax-mix-base, #D29B67, @syntax-mix-color);
+@blue: #61afef;
+@green: #98c379;
+@orange:#d29b67;
+@purple: #c678dd;
+@red: #e05252;
+@white: #ffffff;
+@yellow: #e5c07b;
 
 atom-text-editor.editor {
-  .syntax--invalid {
-    color: @dark-red;
+  .syntax--command.syntax--ezproxy {
+    color: @yellow;
   }
 
-  .syntax--meta.syntax--structure.syntax--dictionary.syntax--cfg:not(.syntax--value) > .syntax--string.syntax--quoted.syntax--double.syntax--cfg {
-    color: @gray;
+  .syntax--invalid.syntax--syntax {
+    color: @white  !important;
+    background-color: @red !important;
   }
 
-  .syntax--meta.syntax--structure.syntax--dictionary.syntax--cfg .syntax--string.syntax--quoted.syntax--double.syntax--cfg {
-    color: @orange;
+  .syntax--entity.syntax--url {
+    color: @blue;
   }
 
-  .syntax--punctuation {
-    color: @light-gray;
+  .syntax--title.syntax--ezproxy {
+    color: @green;
+  }
+
+  .syntax--web-command.syntax--ezproxy {
+    color: @purple;
   }
 }

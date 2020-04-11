@@ -1,61 +1,59 @@
 'scopeName': 'source.ezproxy'
-'name': 'ezProxy'
+'name': 'ezproxy'
 'fileTypes': ['cfg']
 
-# entity.name.function.ezproxy - blue
+# entity.url.ezproxy - blue
 # invalid.illegal - red background, white text
 # string.quoted.single.ezproxy - green
-# keyword.control.ezproxy - purple
+# web-command.ezproxy - purple
 # markup.underline.ezproxy - underline
-# meta.class.ezproxy - yellow
+# command.ezproxy - yellow
 
 # PHE?
+
+# <name>.ezproxy
 
 'patterns': [
   {
     'match': '^(AddUserHeader)(.*)'
     'captures':
       '1':
-        'name': 'keyword.control.ezproxy'
+        'name': 'web-command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
+        'name': 'entity.url.ezproxy'
     'name': 'meta.function.ezproxy'
   },
   {
     'match': '^(AnonymousURL )(.*)'
     'captures':
       '1':
-        'name': 'keyword.control.ezproxy'
+        'name': 'web-command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(Audit )(.*)'
     'captures':
       '1':
-        'name': 'meta.class.ezproxy'
+        'name': 'command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(AuditPurge )(.*)'
     'captures':
       '1':
-        'name': 'meta.class.ezproxy'
+        'name': 'command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(AutoLoginIP )(.*)'
     'captures':
       '1':
-        'name': 'meta.class.ezproxy'
+        'name': 'command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   # Blank space at the beggining of line, mark them red
   {
@@ -66,114 +64,102 @@
     'match': '^(Cookie |COOKIE )(.*)'
     'captures':
       '1':
-        'name': 'keyword.control.ezproxy'
+        'name': 'web-command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   # Comments
   {
     'match': '^([#]+)[^�]+'
-    'name': 'keyword.control.ezproxy'
+    'name': 'web-command.ezproxy'
   },
   {
     'match': '^(Domain |D |domain )(.*)'
     'captures':
       '1':
-        'name': 'meta.class.ezproxy'
+        'name': 'command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'entity.name.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(DomainJavaScript |DJ )(.*)'
     'captures':
       '1':
-        'name': 'meta.class.ezproxy'
+        'name': 'command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'string.quoted.single.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(ExcludeIP )(.*)'
     'captures':
       '1':
-        'name': 'meta.class.ezproxy'
+        'name': 'command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(Find )(.*)'
     'captures':
       '1':
-        'name': 'keyword.control.ezproxy'
+        'name': 'web-command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-      'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(Host |host |H )(.*)'
     'captures':
       '1':
-        'name': 'meta.class.ezproxy'
+        'name': 'command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'entity.name.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(HostJavaScript |HJ )(.*)'
     'captures':
       '1':
-        'name': 'meta.class.ezproxy'
+        'name': 'command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'string.quoted.single.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(HTTPHeader )(.*)'
     'captures':
       '1':
-        'name': 'keyword.control.ezproxy'
+        'name': 'web-command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(HTTPMethod )(.*)'
     'captures':
       '1':
-        'name': 'keyword.control.ezproxy'
+        'name': 'web-command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(IncludeIP )(.*)'
     'captures':
       '1':
-        'name': 'meta.class.ezproxy'
+        'name': 'command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(IntruderIPAttempts )(.*)'
     'captures':
       '1':
-        'name': 'meta.class.ezproxy'
+        'name': 'command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(IntruderUserAttempts )(.*)'
     'captures':
       '1':
-        'name': 'meta.class.ezproxy'
+        'name': 'command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   # Invalid characters and color background red
   {
@@ -184,229 +170,205 @@
     'match': '^(Location )(.*)'
     'captures':
       '1':
-        'name': 'meta.class.ezproxy'
+        'name': 'command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(LogFile )(.*)'
     'captures':
       '1':
-        'name': 'meta.class.ezproxy'
+        'name': 'command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(LogFormat )(.*)'
     'captures':
       '1':
-        'name': 'meta.class.ezproxy'
+        'name': 'command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(LoginPort )(.*)'
     'captures':
       '1':
-        'name': 'meta.class.ezproxy'
+        'name': 'command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(LoginPortSSL )(.*)'
     'captures':
       '1':
-        'name': 'meta.class.ezproxy'
+        'name': 'command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(MaxLifetime )(.*)'
     'captures':
       '1':
-        'name': 'meta.class.ezproxy'
+        'name': 'command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(MaxSessions )(.*)'
     'captures':
       '1':
-        'name': 'meta.class.ezproxy'
+        'name': 'command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(MaxVirtualHosts )(.*)'
     'captures':
       '1':
-        'name': 'meta.class.ezproxy'
+        'name': 'command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(MimeFilter )(.*)'
     'captures':
       '1':
-        'name': 'keyword.control.ezproxy'
+        'name': 'web-command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(Name )(.*)'
     'captures':
       '1':
-        'name': 'meta.class.ezproxy'
+        'name': 'command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(NeverProxy |neverproxy )(.*)'
     'captures':
       '1':
-        'name': 'keyword.control.ezproxy'
+        'name': 'web-command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(Option |OPTION )(.*)'
     'captures':
       '1':
-        'name': 'keyword.control.ezproxy'
+        'name': 'web-command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(ProxyHostnameEdit )(.*)'
     'captures':
       '1':
-        'name': 'keyword.control.ezproxy'
+        'name': 'web-command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(RejectIP )(.*)'
     'captures':
       '1':
-        'name': 'meta.class.ezproxy'
+        'name': 'command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(Replace )(.*)'
     'captures':
       '1':
-        'name': 'keyword.control.ezproxy'
+        'name': 'web-command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-      'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(ShibbolethDisable )(.*)'
     'captures':
       '1':
-        'name': 'meta.class.ezproxy'
+        'name': 'command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(ShibbolethMetadata )(.*)'
     'captures':
       '1':
-        'name': 'meta.class.ezproxy'
+        'name': 'command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(SkipPort )(.*)'
     'captures':
       '1':
-        'name': 'meta.class.ezproxy'
+        'name': 'command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(SSLCipherSuite )(.*)'
     'captures':
       '1':
-        'name': 'meta.class.ezproxy'
+        'name': 'command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(SSLHonorCipherOrder )(.*)'
     'captures':
       '1':
-        'name': 'meta.class.ezproxy'
+        'name': 'command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(SSLOpenSSLConfCmd )(.*)'
     'captures':
       '1':
-        'name': 'meta.class.ezproxy'
+        'name': 'command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^([Title ])[^�]+|^([T ])[^�]+'
-    'name': 'string.quoted.single.ezproxy'
+    'name': 'title.ezproxy'
   },
   {
     'match': '^(TokenKey )(.*)'
     'captures':
       '1':
-        'name': 'meta.class.ezproxy'
+        'name': 'command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(TokenSignatureKey )(.*)'
     'captures':
       '1':
-        'name': 'meta.class.ezproxy'
+        'name': 'command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(URL |Url |U )(.*)'
     'captures':
       '1':
-        'name': 'meta.class.ezproxy'
+        'name': 'command.ezproxy'
       '2':
         'name': 'markup.underline.ezproxy'
-    'name': 'entity.name.function.ezproxy'
+    'name': 'entity.url.ezproxy'
   },
   {
     'match': '^(UsageLimit )(.*)'
     'captures':
       '1':
-        'name': 'meta.class.ezproxy'
+        'name': 'command.ezproxy'
       '2':
-        'name': 'entity.name.function.ezproxy'
-    'name': 'meta.function.ezproxy'
+        'name': 'entity.url.ezproxy'
   }
 ]
