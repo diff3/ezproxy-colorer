@@ -2,16 +2,7 @@
 'name': 'ezproxy'
 'fileTypes': ['cfg']
 
-# entity.url.ezproxy - blue
-# invalid.illegal - red background, white text
-# string.quoted.single.ezproxy - green
-# web-command.ezproxy - purple
-# markup.underline.ezproxy - underline
-# command.ezproxy - yellow
-
 # PHE?
-
-# <name>.ezproxy
 
 'patterns': [
   {
