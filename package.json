@@ -1,5 +1,5 @@
 {
-  "name": "ezProxy colorer",
+  "name": "ezProxy-colorer",
   "version": "1.0.0",
   "description": "ezProxy config file colorer for Atom editor ",
   "engines": {
